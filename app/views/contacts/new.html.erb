@@ -21,8 +21,10 @@
           </div>  
           
           <div>
-            <%= f.submit "Submit", class:'btn btn-default' %>
-            <%= flash[:notice] %>
+            <%= f.submit "Submit", class: 'btn btn-default' %>
+            <p class="contact-flash">
+              <%= flash[:notice] %>
+            </p>
           </div>
         <% end %>
       </div>
